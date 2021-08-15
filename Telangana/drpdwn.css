@@ -1,0 +1,35 @@
+.dropbtn {
+    font-family: 'Cookie', cursive;
+    
+    background-color:rgba(145, 3, 62, 0.514);
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(145, 3, 62, 0.226);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
