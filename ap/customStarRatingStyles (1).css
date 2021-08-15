@@ -1,0 +1,85 @@
+:root{
+    --borderRadius: 15px;
+    --innerPadding: 10px;
+    --textBG: rgba(0,0,0,0.1);
+    --fontcolor: orange;
+    --commentHeight: 200px;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html,body{
+    
+    background-color: rgba(0,0,0,0);
+    font-size: 30px;
+    color: var(--fontcolor);
+}
+
+/* CONTAINER */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container .top{
+    display: flex;
+    justify-content: center;
+}
+
+/* STAR WIDGETS */
+.container .star-widget input{display: none;}
+.container .star-widget{text-align: center;}
+.container .star-widget label,span{float:right;}
+
+input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{color: #fd4;}
+input:checked ~ label{color: #fd4;}
+
+
+
+/* COMMENT */
+form .username{
+    width: 30%;
+    visibility: hidden;
+
+    color: var(--fontcolor);
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+    padding: var(--innerPadding);
+    background-color: var(--textBG);
+    border:1px solid white;
+    border-bottom: none;
+    outline: none;
+    
+}
+
+::placeholder {
+    color: rgba(255,255,255,0.5)
+}
+
+form .textarea textarea{
+    width: 100%;
+    height: var(--commentHeight);
+    resize: none;
+    visibility: hidden;
+
+    color: var(--fontcolor);
+    padding: var(--innerPadding);
+    background-color: var(--textBG);
+    border:1px solid white;
+    border-radius: 0 var(--borderRadius) var(--borderRadius) var(--borderRadius);
+    outline: none;
+}
+
+.btn button{
+    width: 100%;
+    height: calc( 1 / 5 * var(--commentHeight));
+    visibility: hidden;
+
+
+    color: var(--fontcolor);
+    border-radius: var(--borderRadius);
+    padding: var(--innerPadding);
+    background-color: rgba(0,0,0,0.2);
+    border:none;
+    outline: none;
+}
+.btn button:hover{
+    background-color: rgba(0,0,0,0.1);
+}
