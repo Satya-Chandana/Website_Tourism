@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="customStarRatingStyles.css">
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="star-widget">
+                <span class="RatingScore"> 0.0</span>
+                <input type="radio" name="rate" id="rate-5" class="5" onclick="clickStar(this)">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4" class="4" onclick="clickStar(this)">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3" class="3" onclick="clickStar(this)">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2" class="2" onclick="clickStar(this)">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1" class="1" onclick="clickStar(this)">
+                <label for="rate-1" class="fas fa-star"></label>
+            </div>
+        </div>
+        <form action="javascript:void(0);">
+            <div>
+                <input type="text" class="username" placeholder="Username">
+            </div>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience.."></textarea>
+            </div>
+            
+            <div class="btn">
+                <button>Post</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+<script>
+const btn = document.querySelector("button");
+const textarea = document.querySelector("textarea");
+const username = document.querySelector(".username");
+function clickStar(e)
+{
+    document.querySelector(".RatingScore").innerHTML = "   " + e.classList.value + ".0";
+    btn.style.visibility = "visible";
+    textarea.style.visibility = "visible";
+    username.style.visibility = "visible";
+}
+btn.addEventListener("click",()=>
+{
+    if(textarea.value.length > 1){
+        console.log("submitting..")
+        btn.innerText = 'Thank you for submitting..';
+        btn.disabled = true;
+        textarea.style.display = "none";
+        username.style.display = "none";
+        document.querySelector(".star-widget").style.pointerEvents = "none";
+    }
+    else{
+        alert("Please make sure you have entered text in the textarea")
+    }
+});
+</script>
+
+</html>

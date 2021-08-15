@@ -1,0 +1,23 @@
+body {
+    background-image: url('119450-light-green-abstract-background-design.jpg') ;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+   
+a {text-decoration: none;} 
+
+.content 
+  {
+    max-width: 1350px;
+    margin: auto;
+  }
+
+  .footer
+{
+    background-image: linear-gradient(to bottom right,rgb(196, 9, 196),rgb(44, 44, 224));
+    height: 450px;
+    width:100%
+    
+}

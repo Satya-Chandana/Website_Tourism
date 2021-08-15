@@ -1,0 +1,80 @@
+body 
+{
+    background-image: url(' photo-1588345921523-c2dcdb7f1dcd.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+   
+A {text-decoration: none;} 
+
+#text
+{
+    color:black; 
+    font-size: 23px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+      
+
+#subheading
+{
+    color:crimson; 
+    font-size:35px ;
+    font-family: sans-serif;
+    
+}
+
+.top
+{
+    position: relative;
+}
+
+.culture
+{
+    font-size: 45px;
+    left: 850px;
+    top:280px;
+    position:absolute;
+    color: azure;
+    text-shadow: 2px 2px 10px black;
+    font-family: sans-serif;
+    
+}
+
+.tradition 
+{
+    font-size: 45px;
+    left: 965px;
+    top:420px;
+    position:absolute;
+    color:azure;
+    text-shadow: 2px 2px 10px black;
+    font-family: sans-serif;
+    
+}
+
+.and
+{
+    font-size: 50px;
+    left: 1070px;
+    top:350px;
+    position:absolute;
+    color:azure;
+    text-shadow: 2px 2px 10px black;
+    font-family: sans-serif;
+    
+}
+
+.content 
+  {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .footer
+{
+    background-image: linear-gradient(to bottom right,rgb(196, 9, 196),rgb(44, 44, 224));
+    height: 450px;
+    width:100%
+    
+}

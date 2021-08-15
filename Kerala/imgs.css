@@ -1,0 +1,113 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+.bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    font-family: 'Bangers', cursive;
+    font-size: 400%;
+  }
+
+/*
+
+hover img ||||||||| ----------------------------
+
+.wrap { position: relative; height: 200px; width: 257px; } 
+
+.description
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.534);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    visibility: .2s; 
+}
+
+.wrap:hover .description 
+{ 
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.container {
+    position: relative;
+    width:860px;
+  }
+  
+  .image {
+    display: block;
+    width:860px;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00bfff60;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 500%;
+    font-family: 'Tourney', cursive;;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }*/
+/*
+.module {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(ptv.jpg);
+    background-size: cover;
+    width:860px;
+    height:529px;
+    margin: 10px 0 0 10px;
+    position: relative;
+    float: left;
+  }
+
+
+
+.lr p {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    margin: 0;
+  }
+
+/*.bl{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+*/

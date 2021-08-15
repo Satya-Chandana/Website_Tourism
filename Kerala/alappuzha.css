@@ -1,0 +1,45 @@
+body {
+    background-image: url('999222.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+    
+    #heading{
+            color:black; font-size: 85px; font-family:sans-serif;
+    }
+    
+    #subheading
+    {
+            color:firebrick;
+             font-size:35px ;
+             font-family:sans-serif;
+    
+    }
+    
+    #text
+    {
+            color:black;
+            font-size: 23px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    
+    #places{
+            color:navy;
+            font-size: 35px;
+            font-family:sans-serif;
+    
+    }
+
+    .content 
+  {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .footer
+{
+    background-image: linear-gradient(to bottom right,rgb(196, 9, 196),rgb(44, 44, 224));
+    height: 100%;
+    width:100%
+    
+}

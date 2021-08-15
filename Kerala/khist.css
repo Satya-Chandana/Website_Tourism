@@ -1,0 +1,57 @@
+body 
+{
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+a{text-decoration: none;} 
+
+#heading{color:black; font-size:70px; font-family: sans-serif;}
+
+#subheading{color:mediumblue; font-size:35px ; font-family: sans-serif;}
+
+#text{color:black; font-size: 23px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.top
+{
+    position: relative;
+}
+
+.Kerala
+{
+    font-size: 140px;
+    left: 400px;
+    top:120px;
+    position:absolute;
+    color: azure;
+    text-shadow: 2px 2px 10px black;
+    
+    
+}
+
+.History
+{
+    font-size: 141px;
+    left: 510px;
+    top:270px;
+    position:absolute;
+    color:azure;
+    text-shadow: 2px 2px 10px black;
+    
+}
+
+.content 
+  {
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  .footer
+{
+    background-image: linear-gradient(to bottom right,rgb(196, 9, 196),rgb(44, 44, 224));
+    height: 450px;
+    width:100%
+    
+}

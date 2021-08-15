@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgba(0,0,0,0);
+    color: gray;
+}
+.checked {
+    color: orange;
+}
+.fa-star:hover{
+    opacity: 0.5;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <span onclick="clickStar(this)" id="1s" class="fa fa-star"></span>
+        <span onclick="clickStar(this)" id="2s" class="fa fa-star"></span>
+        <span onclick="clickStar(this)" id="3s" class="fa fa-star"></span>
+        <span onclick="clickStar(this)" id="4s" class="fa fa-star"></span>
+        <span onclick="clickStar(this)" id="5s" class="fa fa-star"></span>
+        <span class="star-value">0.0</span>
+    </div>
+<script type="text/javascript">
+function clickStar(e)
+{   
+    console.log(e.id);
+    const starsList = document.querySelectorAll(".fa-star");
+    const starsLabel = document.querySelector(".star-value");
+    for(let i=0;i<5;i++) {starsList[i].classList.remove("checked");}
+    if(e.id == "1s"){for(let i=0;i<1;i++) {starsList[i].classList.add("checked");}starsLabel.innerHTML="1.0";}
+    if(e.id == "2s"){for(let i=0;i<2;i++) {starsList[i].classList.add("checked");}starsLabel.innerHTML="2.0";}
+    if(e.id == "3s"){for(let i=0;i<3;i++) {starsList[i].classList.add("checked");}starsLabel.innerHTML="3.0";}
+    if(e.id == "4s"){for(let i=0;i<4;i++) {starsList[i].classList.add("checked");}starsLabel.innerHTML="4.0";}
+    if(e.id == "5s"){for(let i=0;i<5;i++) {starsList[i].classList.add("checked");}starsLabel.innerHTML="5.0";}
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    background-image: url('271d1863de5a7e0a88b5c8023c61dc01.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    }
+    
+    
+    #heading{
+        color:white; font-size: 85px; font-family:sans-serif;
+    }
+    
+    #subheading
+    {
+        color:gold; 
+        font-size:35px ;
+         font-family:sans-serif;
+    
+    }
+    
+    #text
+    {
+        color:white; 
+        font-size: 23px; 
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #places{
+        color:red; 
+        font-size: 35px; 
+        font-family:sans-serif;
+    
+    }
+
+    .content 
+  {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .footer
+{
+    background-image: linear-gradient(to bottom right,rgb(196, 9, 196),rgb(44, 44, 224));
+    height: 100%;
+    width:100%
+    
+}
