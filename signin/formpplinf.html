@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        
+
+        <link rel="stylesheet" href="pplinfos.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                Create a Plan
+            </div>
+            <form id="form" class="form" action="htlsgn.html" method="POST" onsubmit="return checkInputs()">
+                <div class="userdet">
+                <div class="form-control">
+                    <label for="destination" class="det">Destination</label>
+                
+                <select id="dest" >
+                    <option value="destiantion">Select your Destination</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                </select>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="people" class="det">Travellers</label>
+                    <input type="number" placeholder="No of people" id="nump">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="date" class="det">Arrival</label>
+                    <input type="date" placeholder="Enter Arrival date" id="datear" required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                
+                <div class="form-control">
+                    <label for="date1" class="det">Leaving</label>
+                    <input type="date" placeholder="Enter Leaving date" id="datel" required>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                
+                
+                
+                
+                <div class="button">
+                    <input type="submit" value="Proceed">
+                </div>
+            </form>
+        </div>
+
+
+
+        <script src="pplinfojs.js"></script>
+    </body>
+</html>
