@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height:300vh;
+    background: linear-gradient(90deg, #feb37a 1%, #fe7f5f 100%);
+}
+
+.videoBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.overlayVid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayVid p{
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    text-align: center;
+    color:white;
+    border-bottom: 1px solid white;
+    border-style:ridge;
+    padding: 0 5px;
+}
+.videoBG label{
+    float: right;
+    color: white;
+    padding-right: 10px;
+    font-size: .5rem;
+}
+
+.transportInfo{
+    text-align: center;
+    width: 80%; 
+    margin-left: 12%;
+}
+
+.transportInfo > p{
+    text-align: left;
+}
+
+
+
+.gridContainer{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 50px;
+}
+
+.gridItem{
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.1s;
+    background: linear-gradient(115deg, #f8f8f8 10%, #cecece 90%);
+}
+.gridItem h4{
+    padding: 3px;
+    color: black;
+}
+
+.gridItem img{
+    width: 100%;
+
+}
+
+.gridItem:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+  }
+
+
+.videoWrapper{
+    position: relative;
+    overflow: hidden;
+    padding-top:56.25%;
+    text-align: center;
+}
+
+.videoWrapper iframe{
+    position: absolute;
+    top: 0; left:0;
+    width: 90%;
+    height: 100%;
+    padding-left: 5%;
+}

@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height:300vh;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.videoBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay p{
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    text-align: center;
+    color:white;
+    border-bottom: 1px solid white;
+    border-style:ridge;
+    padding: 0 5px;
+}
+.videoBG label{
+    float: right;
+    color: white;
+    padding-right: 10px;
+    font-size: .5rem;
+}
+

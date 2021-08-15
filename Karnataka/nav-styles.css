@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor: #9f01ea;
+    --secondaryColor: #56d8e4;
+    --hoverBGColor: rgba(0,0,0,0.5);
+    --fontColor: white;
+    --navBG: rgba(0,0,0,.38);
+    --liBG: rgba(0,0,0,0);
+    --li2BG: rgba(255, 193, 158, 0.1);
+}
+
+
+body{background-color: rosybrown;}
+nav{background-color: var(--navBG);}
+nav:after{
+    content:'';
+    clear:both;
+    display: table;
+}
+nav .logo{
+    float:left;
+    color: var(--fontColor);                                      /*          */
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 70px;
+    padding-left: 40px;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li{
+    display: inline-block;
+    background: var(--liBG);
+    margin: 0 10px;              /*  NAV BAR GAPPING  */
+}
+nav ul li a{
+    color: var(--fontColor);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul li a:hover{
+    color: var(--primaryColor);                                      /*          */
+    border-radius: 5px;
+}
+nav ul ul li a:hover{
+    color: var(--primaryColor);
+    box-shadow: none;
+}
+
+nav ul ul li a:hover li{
+    padding-left: 10px;
+    background: var(--hoverBGColor);
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid var(--primaryColor);
+    border-bottom: 3px solid var(--primaryColor); 
+    opacity: 0;
+    visibility: hidden;
+    transition: top 0.0s;
+}
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 200px;            /*  DROP DOWN WIDTH  */
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    background-color: var(--li2BG);
+}
+nav ul ul li a{
+    line-height: 50px;
+}
+
+.show,.icon, input{
+    display: none;
+}
+
+@media all and (max-width: 968px){
+    nav{
+        background-color: black;
+        font-size: 1rem;
+    }
+    nav ul{
+        margin-right: 0;
+        float: left;
+    }
+    nav .logo{
+        opacity: 0.0;
+        line-height: 50px;
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        border-bottom: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .show{
+        display: block;
+        color: white;                                         /*          */
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor:pointer;
+    }
+    .show:hover{
+        color: var(--primaryColor);                               /*          */
+    }
+    .icon{
+        display:block;
+        color:white;
+        position: absolute;
+        right: 40px;
+        line-height: 50px;
+        font-size: 2rem;
+        cursor:pointer;
+    }
+    nav ul li a:hover{
+        box-shadow: none;
+    }
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+    }
+
+}

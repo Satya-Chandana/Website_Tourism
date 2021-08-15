@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav-styles.css">
+    <link rel="stylesheet" href="./kHomeStyles.css">
+    <link rel="stylesheet" href="./accessibility.css">
+
+    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+    color: white;
+}
+.card p,.card b{
+    color: black;
+}
+h2{
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+    <nav>
+        <div class="logo"> Karnataka </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="../Mainpg/intex.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li>
+                <label for="btn-1" class="show">PLACES TO VISIT+</label>
+                <a href="#visit">PLACES TO VISIT+</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="./coorg.html">Coorg</a></li>
+                    <li><a href="./bandipur.html">Bandipur</a></li>
+                    <li><a href="./hampi.html">Hampi</a></li>
+                </ul>
+            </li>
+            <li>
+                <label for="btn-2" class="show">LIST OF STATES+</label>
+                <a href="#">LIST OF STATES+</a>
+                <input type="checkbox" id="btn-2">
+                <ul>
+                    <li><a href="../Telangana/tel2.html">Telangana</a></li>
+                    <li><a href="../TamilNadu/tnuid.html">Tamil Nadu</a></li>
+                    <li><a href="../ap/casestudy.html">Andhra Pradesh</a></li>
+                    <li><a href="../Kerala/Kerala.html">Kerala</a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="#">CONTACT</a></li> -->
+        </ul>
+    </nav>
+
+
+    <div class="videoBG" style="width: 100%;">
+        <video autoplay loop muted style="width: 100%;">
+            <source src="./assets/karnatakaVid.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <p><b>Karnataka</b></p>
+        </div>
+        <label>Footage by Soul & Fuel </label>
+    </div>
+
+
+    <div class="dummyDiv">
+    </div>
+
+    <div style="height:10vh;"></div>
+    <br>
+
+    <div class="center">
+        <div id="about" class="info">
+            <h2>ABOUT</h2>
+            <div class="info-content">
+            <p>Originally known as the princely State of Mysore, Karnataka was formed on 1st November 1956 and is located in the South-Western region of India. It is known for its beautiful yet unpopulated beaches and rich culture.</p>
+            <br>
+            <p>Kannada is the main language spoken here and picking up a few local words can often be very helpful while travelling. The state is famous for its natural, cultural and architectural heritage and there are plenty of places one can visit on his/her trip to Karnataka.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height:10vh;"></div>
+    <br><br><br>
+
+    <div class="center">
+        <div id="visit" class="info">
+            <h2>PLACES TO VISIT</h2>
+        </div>
+            <div class="container">
+
+                <a href="./coorg.html">
+                <div class="card">
+                    <img src="./assets/coorg-hils.png" alt="image" style="width: 100%;">
+                    <div class="cardtext">
+                        <h3><b>Coorg</b></h3>
+                        <p>HILL STATION IN KARNATAKA</p>
+                    </div>
+                </div></a>
+
+                <a href="./bandipur.html">
+                <div class="card">
+                    <img src="./assets/bandipur-national-park1.png" alt="image" style="width: 100%;">
+                    <div class="cardtext">
+                        <h3><b>Bandipur National Park</b></h3>
+                        <p>NATIONAL PARK IN KARNATAKA</p>
+                    </div>
+                </div></a>
+
+                <a href="./hampi.html">
+                <div class="card">
+                    <img src="./assets/hampi.png" alt="image" style="width: 100%;">
+                    <div class="cardtext">
+                        <h3><b>Hampi</b></h3>
+                        <p>MAJOR ATTRACTION IN KARNATAKA</p>
+                    </div>
+                </div></a>
+
+            </div>
+
+        </div>
+
+
+</body>
+<script>
+function resized() {
+    
+    // OVERLAY DIV BLOCK
+    console.log("resized");
+    vidHeight = document.querySelector('.videoBG').offsetHeight;
+    navHeight = document.querySelector('nav').offsetHeight;
+    document.querySelector('.dummyDiv').style.height = vidHeight - navHeight + "px";
+
+    // CARD SIZE
+    const cards = document.querySelectorAll('.card');
+    let bodyWidth = window.innerWidth;
+    console.log(bodyWidth);
+    cards.forEach(el => el.style.width = bodyWidth * 0.3 + "px");
+    if(bodyWidth < 600) {cards.forEach(el => el.style.width = 300 + "px");}
+}
+
+window.addEventListener("resize",resized);
+setTimeout(resized, 10);
+</script>
+
+<script>
+
+
+
+</script>
+
+
+</html>

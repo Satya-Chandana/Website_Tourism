@@ -1,0 +1,80 @@
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: rgb(46, 46, 46);
+}
+body::-webkit-scrollbar-thumb{
+    background: gray;
+}
+
+.center{
+    text-align: center;
+}
+
+.info{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.info-left{
+    text-align: left;
+    padding-left: 20%;
+}
+.info-content
+{
+    justify-self: center;
+    align-self: center;
+    text-align: center;  
+}
+.info-content > p{
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media all and (max-width: 968px){
+    .info{
+        font-size: 1rem;
+    }
+    
+}
+
+
+/* GRID SYSTEM */
+
+.basic-grid{
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+
+    grid-template-columns: repeat(auto-fit , minmax(350px, 550px));
+}
+
+.grid-item{
+    padding: 10px;
+}
+
+.fontSize1, div.fontSize1 > p{
+    font-size: 1.5rem;
+}
+
+.fontSize2, div.fontSize2 > p{
+    font-size: 1.2rem;
+}
+
+.fontSize3, div.fontSize3 > p{
+    font-size: 1.15rem;
+}
+
+.color1{
+    color: orange;
+}
+.color2{
+    color: rgb(0, 255, 234);
+}
+
+.color3{
+    color: rgb(255, 60, 0);
+}

@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height:300vh;
+    background: linear-gradient(90deg, #56d8e4 1%, #0166ea 100%);
+}
+
+.videoBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.overlayVid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlayVid p{
+    position: absolute;
+    top: 40%;
+    font-size: 4rem;
+    text-align: center;
+    color:white;
+    border-bottom: 1px solid white;
+    border-style:ridge;
+    padding: 0 5px;
+}
+.videoBG label{
+    float: right;
+    color: white;
+    padding-right: 10px;
+    font-size: .5rem;
+}
+
+.transportInfo{
+    text-align: center;
+    width: 80%; 
+    margin-left: 12%;
+}
+
+.transportInfo > p{
+    text-align: left;
+}
+
+
+.ttd{
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+.ttd ol{
+    list-style:circle;
+
+}
+.ttd ol li{
+    transition: all 0.2s;
+}
+
+.ttd ol li a{
+    color: white;
+    text-decoration: none;
+}
+
+.ttd ol li:hover{
+    transform: translateX(10px);
+}
+
+.grid-contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

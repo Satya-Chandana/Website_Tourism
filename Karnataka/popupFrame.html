@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+.card-container{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card{
+    margin: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.1s;
+}
+
+.card img{
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  transform: scale(1.05);
+}
+
+.cardtext{
+    padding:2px 16px;
+}
+
+/* POPUP WINDOW */
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+}
+.popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    width:75%;
+    max-width:400px;
+    height:250px;
+    z-index:2;
+    text-align:center;
+    border-radius: 20px;
+    padding:20px;
+    background-color: white;
+}
+
+.popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+}
+
+
+.popup.active .overlay {
+    display:block;
+}
+ 
+.popup.active .content {
+    transition:all 250ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="card-container">
+
+                <div class="card" onclick="togglePopup1()">
+                    <div class="cardtext">
+                    </div>
+                    <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_0,w_900,h_506,r_0,c_crop,q_80,fl_progressive/w_1100,f_auto,c_fit/stay-simple-resorts/kadambuttu_fp2yax" alt="image" style="width: 100%;">
+                    <div class="cardtext">
+                        <h4><b>Kadambattu</b></h4>
+                    </div>
+                </div>
+
+
+            <div class="card" onclick="togglePopup2()">
+                <img src="https://res.cloudinary.com/simplotel/image/upload/x_173,y_297,w_2827,h_1591,r_0,c_crop,q_80,fl_progressive/w_1100,f_auto,c_fit/stay-simple-resorts/Bamboo_Shoot_Curry_Coorg_gtjnmy" alt="image" style="width: 100%;">
+                <div class="cardtext"><h4><b>Bamboo Shoot Curry</b></h4></div>
+            </div>
+
+
+
+
+            <div class="card" onclick="togglePopup3()">
+                <img src="https://res.cloudinary.com/simplotel/image/upload/x_143,y_133,w_881,h_495,r_0,c_crop,q_80,fl_progressive/w_1100,f_auto,c_fit/stay-simple-resorts/Pork_Curry_Coorg_isaxem" alt="image" style="width: 100%;">
+                <div class="cardtext"><h4><b>Panda Curry</b></h4></div>
+            </div>
+
+
+
+
+            <div class="card" onclick="togglePopup4()">
+                <img src="https://res.cloudinary.com/simplotel/image/upload/x_20,y_57,w_538,h_302,r_0,c_crop,q_80,fl_progressive/w_1100,f_auto,c_fit/stay-simple-resorts/Akki_roti_with_Ellu_Pajji_Coorg_p3ntfu" alt="image" style="width: 100%;">
+                <div class="cardtext"><h4><b>Akki Roti</b></h4></div>
+            </div>
+
+            
+            <div class="card" onclick="togglePopup5()">
+                <img src="https://static-blog.treebo.com/wp-content/uploads/2018/03/Noolputtu.jpg" alt="image" style="width: 100%;">
+                <div class="cardtext"><h4><b>Noolputtu</b></h4></div>
+            </div>
+
+
+            <div class="card" onclick="togglePopup6()">
+                <img src="https://static-blog.treebo.com/wp-content/uploads/2018/03/Kuleputtu.jpg" alt="image" style="width: 100%;">
+                <div class="cardtext"><h4><b>Keluputtu</b></h4></div>
+            </div>
+
+
+
+    </div>
+
+</body>
+
+
+<script>
+
+// function togglePopup1(){document.getElementById("popup-1").classList.toggle("active");}
+// function togglePopup2(){document.getElementById("popup-2").classList.toggle("active");}
+// function togglePopup3(){document.getElementById("popup-3").classList.toggle("active");}
+// function togglePopup4(){document.getElementById("popup-4").classList.toggle("active");}
+
+
+</script>
+
+</html>
