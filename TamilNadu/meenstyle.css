@@ -1,0 +1,95 @@
+
+.menu-area li a {
+	text-decoration: none;
+	color: #fff;
+	
+	display: block;
+	padding: 0 20px;
+	font-size: 21px;
+	line-height: 25px;
+	position: relative;
+	z-index: 1;
+	font-family: 'Caveat', cursive;
+}
+.menu-area li {
+	list-style: none;
+	display: inline-block;
+}
+
+nav {
+	position: relative;
+	padding: 40px 50px 40px 40px;
+	text-align: right;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.753);
+
+}
+.logo {
+	width:30%;
+	float: left;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 2%;
+	font-family: 'Caveat', cursive ;font-size: 35px;
+}
+.menu-area li a:hover {
+	background: linear-gradient(135deg,#5614B0,#DBD65C);
+	color: #fff;
+}
+
+.navigation {
+  
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* z-index works pretty much like a layer:
+    the higher the z-index value, the greater
+    it will allow the navigation tag to stay on top
+    of other tags*/
+ } 
+
+ .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  .dropbtn {
+    font-family: 'Caveat', cursive;
+    
+    background-color:rgba(0, 0, 0, 0.514);
+    color: #fff;
+    font-size: 25px;
+    border: none;
+    
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 10, 10, 0.226);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+ 
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

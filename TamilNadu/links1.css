@@ -1,0 +1,141 @@
+      /*a:link {
+                color: rgb(245, 145, 78);
+                background-color: transparent;
+                text-decoration: none;
+                font-size: 130%;
+                font-style: italic;
+                font-family: 'Chewy', cursive;
+                font-weight: bold;
+                letter-spacing: 0.7px;
+              }
+    
+               a:visited {
+               color: rgb(4, 99, 105);
+               background-color: transparent;
+               text-decoration: none;
+               font-size: 130%;
+               font-style: italic;
+               font-family: 'Chewy', cursive;
+               font-weight: bold;
+               letter-spacing: 0.7px;
+              }
+    
+               a:hover {
+               color: rgb(199, 12, 74);
+               background-color: transparent;
+               text-decoration: underline;
+               font-size: 130%;
+               font-style: italic;
+               font-family: 'Chewy', cursive;
+               font-weight: bold;
+               letter-spacing: 0.7px;
+              }
+    
+               a:active {
+               color: rgb(165, 165, 4);
+               background-color: transparent;
+               text-decoration: underline;
+               font-size: 130%;
+               font-style: italic;
+               font-family: 'Chewy', cursive;
+               font-weight: bold;
+               letter-spacing: 0.7px;
+               
+              } */
+
+    
+    
+        
+
+
+              .parallax {
+                /* The image used */
+                background-image: url('b74.png');
+              
+                /* Full height */
+                height: 100%; 
+              
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+
+              .par1 {
+                /* The image used */
+                background-image: url('b75.jpg');
+              
+                /* Full height */
+                height: 100%; 
+              
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+               
+              .par2 {
+                /* The image used */
+                background-image: url('b78.jpg') ;
+                
+                /* Full height */
+                height: 100%; 
+              
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+
+            
+
+    aside {
+           width: 30%;
+           padding-left: 25px;
+           padding-right: 25px;
+           padding-bottom: 25px;
+           margin-left: 15px;
+           float: right;
+           font-family: 'Charm', cursive;
+           font-size: 100%;
+           background-color: rgba(7, 87, 107, 0.493);
+          }
+
+          .col-div {
+            background: linear-gradient(135deg,#BA8B02,#181818);
+            width: 1000px;
+            padding:20px;
+          }
+
+          .col-div1 {
+            background: linear-gradient(135deg,#73C8A9,#373B44);
+            width: 1000px;
+            padding:20px;
+          }
+
+          .col-div2 {
+            background: linear-gradient(135deg,#ba5370,#f4e2d8);
+            background-size: cover;
+            padding:20px;
+          }
+
+          .col-div3 {
+            background: linear-gradient(135deg,#12c2e9,#c471ed,#f64f59);
+            background-size: cover;
+            padding:20px;
+          }
+
+          .col-div4 {
+            background: linear-gradient(135deg,#0000ff, #ffa500);
+            background-size: cover;
+            padding:20px;
+          }
+
+
+
+
+
+
